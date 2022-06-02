@@ -47,7 +47,7 @@ public class SignInTest extends BaseTest {
     3. Enter valid Password
     4. Click on 'Sign In' button
 
-    Expected result:
+    Expected results:
     4. Verify that the expected error message is displayed
      */
 

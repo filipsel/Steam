@@ -26,13 +26,13 @@ public class HomePage extends BasePage{
     @FindBy (xpath = "//div [@id = 'genre_tab']")
     WebElement categoriesTab;
 
-    @FindBy (xpath = "//a[contains(@class,'popup_menu_item')][normalize-space()='Free to Play']")
+    @FindBy (xpath = "//a[contains(@class,'popup_menu_item')][normalize-space() = 'Free to Play']")
     WebElement freeToPlaySubcategory;
 
-    @FindBy (xpath = "//span[@id='account_pulldown']")
+    @FindBy (xpath = "//span[@id ='account_pulldown']")
     WebElement accountPulldownMenu;
 
-    @FindBy (xpath = "//a[normalize-space()='View profile']")
+    @FindBy (xpath = "//a[normalize-space() = 'View profile']")
     WebElement viewProfileDropdownOption;
 
     public BasePage enterTextIntoSearchBox(String text) {

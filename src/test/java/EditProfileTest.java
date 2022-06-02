@@ -4,6 +4,7 @@ import Pages.SignInPage;
 import Pages.Strings;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class EditProfileTest extends BaseTest{
 

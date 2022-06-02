@@ -10,6 +10,7 @@ public class Strings {
 
     public static final String VALID_STEAM_ACCOUNT_NAME = "SteamPunk340";
     public static final String VALID_PASSWORD = "SteamTest340.";
+    public static final String VALID_EMAIL_ADDRESS = "steamtest240@gmail.com";
 
     public static final String INVALID_STEAM_ACCOUNT_NAME = "Random123";
     public static final String INVALID_PASSWORD = "Random123";
@@ -29,4 +30,7 @@ public class Strings {
     public static final String NAME_OF_GAME_ON_WISHLIST = "Counter-Strike: Global Offensive";
 
     public static final String PROFILE_NAME = "steamtest240";
+
+    public static final String SELECT_SERBIA = "RS";
+    public static final String REGISTRATION_ERROR_MESSAGE = "You must verify your humanity before you can create a Steam account.";
 }

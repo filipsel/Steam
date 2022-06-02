@@ -2,6 +2,7 @@ import Pages.*;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class SearchTest extends BaseTest {
 

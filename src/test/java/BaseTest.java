@@ -13,6 +13,7 @@ public class BaseTest {
         options.addArguments(new String[]{"--disable-popup-blocking"});
         options.addArguments(new String[]{"--incognito"});
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+        options.setExperimentalOption("useAutomationExtension", false);
         ChromeDriver driver = new ChromeDriver(options);
         return driver;
     }

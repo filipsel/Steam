@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class SignInPage extends BasePage {
 
-    //'Sign In' section elements:
+    //Page elements:
     @FindBy (xpath = "//div[@class = 'login_btn_ctn']//span[contains(text(),'Sign In')]")
     WebElement signInButton;
 
@@ -28,6 +28,9 @@ public class SignInPage extends BasePage {
 
     @FindBy (xpath = "div[@class = 'login_btn_ctn']//span[contains(text(),'Join Steam')]")
     WebElement joinSteamButton;
+
+
+    //Methods
 
     public SignInPage(ChromeDriver driver) {
         super(driver);

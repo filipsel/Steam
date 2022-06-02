@@ -10,6 +10,9 @@ public class FreeToPlayPage extends BasePage{
         super(driver);
     }
 
+
+    //Page elements
+
     @FindBy (xpath = "//h2[@class='pageheader']")
     WebElement pageHeader;
 
@@ -19,9 +22,13 @@ public class FreeToPlayPage extends BasePage{
     @FindBy (xpath = "//a[contains(@class,'app_impression_tracked')]//div[contains(@class,'tab_item_name')][normalize-space()='Counter-Strike: Global Offensive']")
     WebElement specificGame;
 
+
+    //Methods
+
     public String pageHeaderText() {
         return pageHeader.getText();
     }
+
 
     public void clickOnTopSellersButton() {
         waitForElementVisibility(topSellersButton);

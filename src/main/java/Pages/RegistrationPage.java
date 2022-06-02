@@ -15,6 +15,9 @@ public class RegistrationPage extends BasePage{
         waitForElementToBeClickable(continueButton);
     }
 
+
+    //Page elements
+
     @FindBy (xpath = "//input[@id = 'email']")
     WebElement emailAddressField;
 
@@ -42,6 +45,8 @@ public class RegistrationPage extends BasePage{
     @FindBy (xpath = "//div[@id = 'error_display'")
     WebElement errorDisplay;
 
+
+    //Method for selecting Serbia from the country of residence drop-down menu
     public void selectSerbiaFromCountryOfResidenceDropDownMenu(String value) {
         Select dropDownMenu = new Select(countryOfResidenceDropDownMenu);
         dropDownMenu.selectByValue(value);
@@ -61,6 +66,7 @@ public class RegistrationPage extends BasePage{
         return this;
     }
 
+    //Method for switching to an iFrame and clicking on reCAPTCHA checkbox
     public void clickOnRecaptchaCheckbox() {
         waitForFrameToBeAvailable(recaptchaIFrame);
         waitForElementToBeClickable(recaptchaCheckbox);
@@ -81,5 +87,4 @@ public class RegistrationPage extends BasePage{
         waitForElementVisibility(errorDisplay);
         return errorDisplay.getText();
     }
-
 }

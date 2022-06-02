@@ -10,6 +10,9 @@ public class ProfilePage extends BasePage{
         super(driver);
     }
 
+
+    //Page elements
+
     @FindBy (xpath = "//span[@class = 'actual_persona_name']")
     WebElement profileName;
 
@@ -21,6 +24,9 @@ public class ProfilePage extends BasePage{
 
     @FindBy (xpath = "//input[@name='real_name']")
     WebElement realNameInputBox;
+
+
+    //Methods
 
     public String profileNameText() {
         String name= profileName.getText();

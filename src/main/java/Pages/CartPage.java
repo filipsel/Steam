@@ -10,6 +10,9 @@ public class CartPage extends BasePage{
         super(driver);
     }
 
+
+    //Page elements
+
     @FindBy (xpath = "//h2[@class = 'pageheader']")
     WebElement pageHeader;
 
@@ -24,6 +27,9 @@ public class CartPage extends BasePage{
 
     @FindBy (xpath = "//div[@class='cart_status_message']")
     WebElement cartStatusMessage;
+
+
+    //Methods
 
     public String pageHeaderText() {
         return pageHeader.getText();
@@ -40,7 +46,7 @@ public class CartPage extends BasePage{
 
     public void removeGameFromCart() {
         print("removeGameFromCart");
-        waitForElementVisibility(removeButton);
+        waitForElementToBeClickable(removeButton);
         removeButton.click();
     }
 }

@@ -11,6 +11,9 @@ public class HomePage extends BasePage{
         super(driver);
     }
 
+
+    //Page Elements
+
     @FindBy(xpath = "//a[@class = 'global_action_link']")
     WebElement loginButton;
 
@@ -34,6 +37,9 @@ public class HomePage extends BasePage{
 
     @FindBy (xpath = "//a[normalize-space() = 'View profile']")
     WebElement viewProfileDropdownOption;
+
+
+    //Methods
 
     public BasePage enterTextIntoSearchBox(String text) {
         waitForElementVisibility(searchBox);

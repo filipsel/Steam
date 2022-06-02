@@ -5,6 +5,7 @@ import jdk.javadoc.doclet.Reporter;
 import java.net.URL;
 
 public class Strings {
+
     public static final String LOGIN_PAGE_URL = "https://store.steampowered.com/login/?redir=&redir_ssl=1&snr=1_4_4__global-header";
     public static final String CREATE_YOUR_ACCOUNT_URL = "https://store.steampowered.com/join/?&snr=1_60_4__62";
 

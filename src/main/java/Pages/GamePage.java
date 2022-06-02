@@ -11,6 +11,9 @@ public class GamePage extends BasePage {
         super(driver);
     }
 
+
+    //Page elements
+
     @FindBy (xpath = "//div[@id = 'appHubAppName']")
     WebElement gameName;
 
@@ -32,6 +35,8 @@ public class GamePage extends BasePage {
     @FindBy (xpath = "//a[@class='title']")
     WebElement nameOfGameOnWishlist;
 
+
+    //Methods
 
     public String getSpecificGameName() {
         print("getSpecificGameName");

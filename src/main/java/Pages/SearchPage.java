@@ -9,8 +9,13 @@ public class SearchPage extends BasePage{
     public SearchPage(ChromeDriver driver) {super(driver);}
 
 
+    //Page elements
+
     @FindBy (xpath = "//span[normalize-space()='Counter-Strike: Global Offensive']")
     WebElement specificGame;
+
+
+    //Methods
 
     public String getSpecificGameName() {
         print("getSpecificGameName");

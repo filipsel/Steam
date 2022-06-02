@@ -6,17 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="d2e20882-e513-4da3-b33a-2070754ab6bc" name="Changes" comment="My project for &quot;Testing &amp; QA&quot; course">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CreateYourAccountPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/FreeToPlayPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/FreeToPlayPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GamePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProfilePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SignInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Strings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/CartPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/CreateYourAccountPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/FreeToPlayPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/FreeToPlayPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/GamePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/GamePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/ProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/ProfilePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/RegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RegistrationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/SearchPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/SignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/SignInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/Strings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/Strings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/RegistrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RegistrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignInTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SignInTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +68,16 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.RegistrationTest.attemptRegistrationWithExistingCredentials">
+  <component name="RunManager" selected="TestNG.WishListTest.addGameToWishlistAndRemoveItFromWishlist">
+    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Steam" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EditProfileTest.openProfileSettings" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Steam" />
       <option name="PACKAGE_NAME" value="" />
@@ -72,11 +90,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest.attemptRegistrationWithExistingCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationTest.attemptRegistrationWithExistingUserCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Steam" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
-      <option name="METHOD_NAME" value="attemptRegistrationWithExistingCredentials" />
+      <option name="METHOD_NAME" value="attemptRegistrationWithExistingUserCredentials" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignInTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Steam" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SignInTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WishListTest.addGameToWishlistAndRemoveItFromWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Steam" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WishListTest" />
+      <option name="METHOD_NAME" value="addGameToWishlistAndRemoveItFromWishlist" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -86,7 +127,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RegistrationTest.attemptRegistrationWithExistingCredentials" />
+        <item itemvalue="TestNG.WishListTest.addGameToWishlistAndRemoveItFromWishlist" />
+        <item itemvalue="TestNG.SignInTest" />
+        <item itemvalue="JUnit.SearchTest" />
+        <item itemvalue="TestNG.RegistrationTest.attemptRegistrationWithExistingUserCredentials" />
         <item itemvalue="TestNG.EditProfileTest.openProfileSettings" />
       </list>
     </recent_temporary>
@@ -137,9 +181,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/EditProfileTest.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/test/java/CartTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

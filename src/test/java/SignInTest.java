@@ -3,8 +3,6 @@ import Pages.Strings;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import java.net.URL;
-
 public class SignInTest extends BaseTest {
 
     /** Successful Login Test
@@ -32,7 +30,7 @@ public class SignInTest extends BaseTest {
             signInPage.clickOnSignInButton();
 
             print("4. Verify that Your profile name is present at the top right corner");
-            assert signInPage.loginElementIsPresent() : "Error. Element is not present";
+            assert signInPage.accountBoxIsPresent() : "Error. Element is not present";
             print("Test successful");
 
         }finally {

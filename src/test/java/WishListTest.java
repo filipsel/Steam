@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class WishListTest extends BaseTest{
 
-    /* Add game to wishlist and remove it from wishlist
+    /** Add game to wishlist and remove it from wishlist
     Test steps:
     1. Perform a successful sign in test
     2. Search for a specific game
@@ -21,8 +21,8 @@ public class WishListTest extends BaseTest{
     4. Assert if the name of the game matches with expected name of the game
     5. Assert whether you're back on the game page
     6. Assert if the 'Add to your wishlist' button is present
-
      */
+    
     @Test
     public void addGameToWishlistAndRemoveItFromWishlist() {
         ChromeDriver driver = openChromeDriver();

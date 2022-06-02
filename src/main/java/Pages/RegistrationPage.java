@@ -42,7 +42,7 @@ public class RegistrationPage extends BasePage{
     @FindBy (xpath = "//iframe[@title='reCAPTCHA']")
     WebElement recaptchaIFrame;
 
-    @FindBy (xpath = "//div[@id = 'error_display'")
+    @FindBy (xpath = "//div[@id = 'error_display']")
     WebElement errorDisplay;
 
 

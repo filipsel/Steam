@@ -27,7 +27,7 @@ public class BaseTest {
             signInPage.enterSteamAccountName(Strings.VALID_STEAM_ACCOUNT_NAME);
             signInPage.enterPassword(Strings.VALID_PASSWORD);
             signInPage.clickOnSignInButton();
-            assert signInPage.loginElementIsPresent() : "Error. Sign in unsuccessful";
+            assert signInPage.accountBoxIsPresent() : "Error. Sign in unsuccessful";
             print("Sign in successful");
     }
 

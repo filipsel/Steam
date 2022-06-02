@@ -23,7 +23,7 @@ public class HomePage extends BasePage{
     @FindBy (xpath = "//input[@id = 'store_nav_search_term']")
     WebElement searchBox;
 
-    @FindBy (xpath = "//img[@src = 'https://store.akamai.steamstatic.com/public/images/blank.gif']")
+    @FindBy (xpath = "//a[@id='store_search_link']//img")
     WebElement searchButton;
 
     @FindBy (xpath = "//div [@id = 'genre_tab']")

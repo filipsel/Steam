@@ -26,6 +26,7 @@ public class RegistrationTest extends BaseTest {
         try {
             print("1. Navigate to registration page");
             RegistrationPage registrationPage = new RegistrationPage(driver);
+
             print("2. Enter existing credentials");
             registrationPage.enterExistingEmailAddress()
                     .enterExistingEmailIntoConfirmYourAddressField();
@@ -40,7 +41,6 @@ public class RegistrationTest extends BaseTest {
 
             print("6. Submit credentials by clicking on 'Continue' button");
             registrationPage.submitCredentials();
-
             print("6. Verify that you are still on the registration page and an error message is displayed");
             String errorMessage = registrationPage.errorDisplayMessage();
             assert errorMessage.equals(Strings.REGISTRATION_ERROR_MESSAGE) : "Error. Registration error message not present. Expected error message: " +

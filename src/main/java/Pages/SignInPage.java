@@ -57,7 +57,7 @@ public class SignInPage extends BasePage {
         signInButton.click();
     }
 
-    public boolean loginElementIsPresent() {
+    public boolean accountBoxIsPresent() {
         waitForElementVisibility(accountBox);
         return presentElement(accountBox);
     }

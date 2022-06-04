@@ -16,14 +16,23 @@ public class ProfilePage extends BasePage{
     @FindBy (xpath = "//span[@class = 'actual_persona_name']")
     WebElement profileName;
 
-    @FindBy (xpath = "//span[normalize-space()='Edit Profile']")
+    @FindBy (xpath = "//span[normalize-space() = 'Edit Profile']")
     WebElement editProfileButton;
 
-    @FindBy (xpath = "//div[@class='DialogHeader']")
+    @FindBy (xpath = "//div[@class = 'DialogHeader']")
     WebElement dialogueHeader;
 
-    @FindBy (xpath = "//input[@name='real_name']")
+    @FindBy (xpath = "//input[@name = 'real_name']")
     WebElement realNameInputBox;
+
+    @FindBy (xpath = "//button[@type='submit']")
+    WebElement saveButton;
+
+    @FindBy (xpath = "//a[normalize-space() = 'Back to Your Profile']")
+    WebElement backToYourProfileButton;
+
+    @FindBy (xpath = "//bdi[normalize-space() = 'steamtest240']")
+    WebElement realNameHeader;
 
 
     //Methods
@@ -44,10 +53,28 @@ public class ProfilePage extends BasePage{
         return headerText;
     }
 
-    public String enterNameIntoRealNameInputBox() {
+    public void enterNameIntoRealNameInputBox() {
         waitForElementVisibility(realNameInputBox);
         realNameInputBox.clear();
         realNameInputBox.sendKeys(Strings.PROFILE_NAME);
-        return enterNameIntoRealNameInputBox();
+    }
+
+    public void clickOnSaveButton() {
+        print("clickOnSaveButton");
+        waitForElementToBeClickable(saveButton);
+        scrollIntoView(saveButton);
+        saveButton.click();
+    }
+
+    public void clickOnbBckToYourProfileButton() {
+        print("clickOnbBckToYourProfileButton");
+        waitForElementToBeClickable(backToYourProfileButton);
+        scrollIntoView(backToYourProfileButton);
+        backToYourProfileButton.click();
+    }
+
+    public String realProfileName() {
+        waitForElementVisibility(realNameHeader);
+        return realNameHeader.getText();
     }
 }

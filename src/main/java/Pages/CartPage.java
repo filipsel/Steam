@@ -4,7 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class CartPage extends BasePage{
+import java.util.*;
+
+public class CartPage extends BasePage {
 
     public CartPage(ChromeDriver driver) {
         super(driver);
@@ -13,21 +15,29 @@ public class CartPage extends BasePage{
 
     //Page elements
 
-    @FindBy (xpath = "//h2[@class = 'pageheader']")
+    @FindBy(xpath = "//h2[@class = 'pageheader']")
     WebElement pageHeader;
 
-    @FindBy (xpath = "//a[@class = 'remove_link']")
+    @FindBy(xpath = "//a[@class = 'remove_link']")
     WebElement removeButton;
 
-    @FindBy (xpath = "//span[normalize-space()='Continue Shopping']")
+    @FindBy(xpath = "//span[normalize-space()='Continue Shopping']")
     WebElement continueShoppingButton;
 
-    @FindBy (xpath = "//a[normalize-space()='CS:GO Prime Status Upgrade']")
+    @FindBy(xpath = "//a[normalize-space()='CS:GO Prime Status Upgrade']")
     WebElement specificGameUpgrade;
 
-    @FindBy (xpath = "//div[@class='cart_status_message']")
+    @FindBy(xpath = "//div[@class='cart_status_message']")
     WebElement cartStatusMessage;
 
+    @FindBy(xpath = "//a[normalize-space()='Valve Complete Pack']")
+    WebElement valveCompletePack;
+
+    @FindBy(xpath = "//a[normalize-space()='CS:GO Prime Status Upgrade']")
+    WebElement cSGoPrimeStatusUpgrade;
+
+    @FindBy(xpath = "//a[normalize-space()='Remove all items']")
+    WebElement removeAllItemsButton;
 
     //Methods
 
@@ -49,4 +59,17 @@ public class CartPage extends BasePage{
         waitForElementToBeClickable(removeButton);
         removeButton.click();
     }
+
+    public void clickOnRemoveAllItemsButton() {
+        removeAllItemsButton.click();
+    }
+
+
+    public ArrayList<WebElement> getNumberOfGamesInTheCart() {
+        ArrayList<WebElement> numberOfGames = new ArrayList<>();
+        numberOfGames.add(cSGoPrimeStatusUpgrade);
+        numberOfGames.add(valveCompletePack);
+        return numberOfGames;
+    }
+
 }

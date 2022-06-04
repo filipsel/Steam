@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.ArrayList;
+
 public class GamePage extends BasePage {
 
 
@@ -18,7 +20,10 @@ public class GamePage extends BasePage {
     WebElement gameName;
 
     @FindBy (xpath = "//a[@id = 'btn_add_to_cart_54029']//span[contains(text(),'Add to Cart')]")
-    WebElement addToCartButton;
+    WebElement addPrimeStatusUpgradeToCart;
+
+    @FindBy (xpath = "//div[@class='game_area_purchase_game_dropdown_subscription game_area_purchase_game']//span[contains(text(),'Add to Cart')]")
+    WebElement addValveCompletePackToCart;
 
     @FindBy (xpath = "//span[normalize-space() = 'Add to your wishlist']")
     WebElement addToWishListButton;
@@ -43,11 +48,18 @@ public class GamePage extends BasePage {
         return gameName.getText();
     }
 
-    public void clickOnAddToCartButton() {
-        print("clickOnAddToCartButton");
-        scrollIntoView(addToCartButton);
-        waitForElementVisibility(addToCartButton);
-        addToCartButton.click();
+    public void clickOnAddToCartButtonForPrimeStatusUpgrade() {
+        print("clickOnAddToCartButtonForPrimeStatusUpgrade");
+        scrollIntoView(addPrimeStatusUpgradeToCart);
+        waitForElementToBeClickable(addPrimeStatusUpgradeToCart);
+        addPrimeStatusUpgradeToCart.click();
+    }
+
+    public void clickOnAddToCartButtonForValveCompletePack() {
+        print("clickOnAddToCartButtonForValveCompletePack");
+        scrollIntoView(addValveCompletePackToCart);
+        waitForElementToBeClickable(addValveCompletePackToCart);
+        addValveCompletePackToCart.click();
     }
 
     public void clickOnAddToYourWishListButton() {
@@ -91,9 +103,4 @@ public class GamePage extends BasePage {
         return nameOfGameOnWishlist.getText();
     }
 
-//    public void clickOnNameOfGameOnWishlist() {
-//        print("clickOnNameOfGameOnWishlist");
-//        waitForElement(nameOfGameOnWishlist);
-//        nameOfGameOnWishlist.click();
-//    }
 }

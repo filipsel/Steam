@@ -9,13 +9,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
 
 public class BasePage {
 
     ChromeDriver driver;
 
     //Constructor for base page which will be used by other page classes
-    public BasePage (ChromeDriver driver) {
+    public BasePage(ChromeDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
@@ -30,7 +31,7 @@ public class BasePage {
         try {
             boolean present = element.isDisplayed();
             return present;
-        } catch(Exception e) {
+        } catch (Exception e) {
             return false;
         }
     }
@@ -48,13 +49,13 @@ public class BasePage {
     }
 
     //Used in order to wait for an element to be clickable
-    public void waitForElementToBeClickable (WebElement element) {
+    public void waitForElementToBeClickable(WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     //Used for waiting for a frame to be available and then switch to it
-    public void waitForFrameToBeAvailable (WebElement element) {
+    public void waitForFrameToBeAvailable(WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(element));
     }
@@ -64,4 +65,5 @@ public class BasePage {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
     }
+
 }

@@ -20,7 +20,6 @@ public class Strings {
 
     public static final String SPECIFIC_GAME_URL = "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/";
     public static final String GAME_NAME = "Counter-Strike: Global Offensive";
-
     public static final String FREE_TO_PLAY_PAGE_HEADER = "Free To Play Games";
 
     public static final String CART_PAGE_URL = "https://store.steampowered.com/cart/";

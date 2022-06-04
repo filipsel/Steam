@@ -1,7 +1,10 @@
 import Pages.*;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
+
+import java.util.ArrayList;
 
 public class BaseTest {
     ChromeDriver driver;
@@ -53,7 +56,7 @@ public class BaseTest {
             successfulSignIn(driver);
             searchForASpecificGameByName(driver);
             GamePage gamePage = new GamePage(driver);
-            gamePage.clickOnAddToCartButton();
+            gamePage.clickOnAddToCartButtonForPrimeStatusUpgrade();
             String cartPageURL = driver.getCurrentUrl();
             Assert.assertEquals(cartPageURL, Strings.CART_PAGE_URL);
             CartPage cartPage = new CartPage(driver);
@@ -67,5 +70,16 @@ public class BaseTest {
             signInPage.enterSteamAccountName(Strings.VALID_STEAM_ACCOUNT_NAME);
             signInPage.enterPassword(Strings.VALID_PASSWORD);
             signInPage.clickOnSignInButton();
+    }
+
+    public boolean numberOfItemsOnTheList(ArrayList<WebElement> arrayList) {
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (arrayList.size() == 2) {
+                return true;
+            }
+            if (arrayList.size() == 0) {
+                return true;
+            }
+        }return false;
     }
 }

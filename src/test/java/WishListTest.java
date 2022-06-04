@@ -22,7 +22,7 @@ public class WishListTest extends BaseTest{
     5. Assert whether you're back on the game page
     6. Assert if the 'Add to your wishlist' button is present
      */
-    
+
     @Test
     public void addGameToWishlistAndRemoveItFromWishlist() {
         ChromeDriver driver = openChromeDriver();

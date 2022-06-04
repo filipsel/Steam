@@ -4,8 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.ArrayList;
-
 public class GamePage extends BasePage {
 
 
@@ -71,13 +69,13 @@ public class GamePage extends BasePage {
     public boolean addToWishListButtonIsPresent() {
         print("addToWishListButtonIsPresent");
         waitForElementVisibility(addToWishListButton);
-        return presentElement(addToWishListButton);
+        return elementPresent(addToWishListButton);
     }
 
     public boolean onWishListButtonIsPresent() {
         print("onWishListButtonIsPresent");
         waitForElementVisibility(onWishlistButton);
-        return presentElement(onWishlistButton);
+        return elementPresent(onWishlistButton);
     }
 
     public void clickOnOnWishlistButton() {
@@ -95,7 +93,7 @@ public class GamePage extends BasePage {
     public boolean gameOnWishListIsPresent() {
         print("gameOnWishListIsPresent");
         waitForElementVisibility(gameOnWishlist);
-        return presentElement(gameOnWishlist);
+        return elementPresent(gameOnWishlist);
     }
 
     public String getGameOnWishlistName() {

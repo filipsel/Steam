@@ -59,7 +59,7 @@ public class SignInPage extends BasePage {
 
     public boolean accountBoxIsPresent() {
         waitForElementVisibility(accountBox);
-        return presentElement(accountBox);
+        return elementPresent(accountBox);
     }
 
     public String errorMessageInTheBox() {

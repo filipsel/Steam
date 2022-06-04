@@ -21,23 +21,26 @@ public class CartPage extends BasePage {
     @FindBy(xpath = "//a[@class = 'remove_link']")
     WebElement removeButton;
 
-    @FindBy(xpath = "//span[normalize-space()='Continue Shopping']")
+    @FindBy(xpath = "//span[normalize-space() = 'Continue Shopping']")
     WebElement continueShoppingButton;
 
-    @FindBy(xpath = "//a[normalize-space()='CS:GO Prime Status Upgrade']")
+    @FindBy(xpath = "//a[normalize-space() = 'CS:GO Prime Status Upgrade']")
     WebElement specificGameUpgrade;
 
-    @FindBy(xpath = "//div[@class='cart_status_message']")
+    @FindBy(xpath = "//div[@class = 'cart_status_message']")
     WebElement cartStatusMessage;
 
-    @FindBy(xpath = "//a[normalize-space()='Valve Complete Pack']")
+    @FindBy(xpath = "//a[normalize-space() = 'Valve Complete Pack']")
     WebElement valveCompletePack;
 
-    @FindBy(xpath = "//a[normalize-space()='CS:GO Prime Status Upgrade']")
+    @FindBy(xpath = "//a[normalize-space() = 'CS:GO Prime Status Upgrade']")
     WebElement cSGoPrimeStatusUpgrade;
 
-    @FindBy(xpath = "//a[normalize-space()='Remove all items']")
+    @FindBy(xpath = "//a[normalize-space() = 'Remove all items']")
     WebElement removeAllItemsButton;
+
+    @FindBy(xpath = "//span[normalize-space() = 'Yes']")
+    WebElement confirmationButton;
 
     //Methods
 
@@ -51,7 +54,7 @@ public class CartPage extends BasePage {
 
     public boolean specificGameUpgradeIsPresent() {
         waitForElementVisibility(specificGameUpgrade);
-        return presentElement(specificGameUpgrade);
+        return elementPresent(specificGameUpgrade);
     }
 
     public void removeGameFromCart() {
@@ -61,6 +64,7 @@ public class CartPage extends BasePage {
     }
 
     public void clickOnRemoveAllItemsButton() {
+        print("clickOnRemoveAllItemsButton");
         removeAllItemsButton.click();
     }
 
@@ -70,6 +74,14 @@ public class CartPage extends BasePage {
         numberOfGames.add(cSGoPrimeStatusUpgrade);
         numberOfGames.add(valveCompletePack);
         return numberOfGames;
+    }
+
+    public void clickOnConfirmationButton() {
+        print("clickOnConfirmationButton");
+        waitForElementToBeClickable(confirmationButton);
+        if (confirmationButton.isDisplayed()) {
+            confirmationButton.click();
+        }
     }
 
 }

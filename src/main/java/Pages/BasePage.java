@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.ArrayList;
 
 public class BasePage {
 
@@ -27,7 +26,7 @@ public class BasePage {
     }
 
     //Verifies whether the element is present or not
-    public boolean presentElement(WebElement element) {
+    public boolean elementPresent(WebElement element) {
         try {
             boolean present = element.isDisplayed();
             return present;

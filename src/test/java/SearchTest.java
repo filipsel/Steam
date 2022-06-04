@@ -18,7 +18,7 @@ public class SearchTest extends BaseTest {
     3. Check whether the specific game is in the search pool
     4. Assert whether the game page URL is correct
     4. Assert whether the game name matches with the game name that is searched for
-     */
+    */
 
     @Test
     public void searchForASpecificGameByName() {
@@ -69,7 +69,7 @@ public class SearchTest extends BaseTest {
     3. Assert whether you are on the 'Free to Play' page by checking if the page header is present
     4. Assert whether the specific game is present on the list
     5. Assert whether you're on the specific game page
-     */
+    */
 
     @Test
     public void searchByCategory() {

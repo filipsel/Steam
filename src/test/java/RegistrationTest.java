@@ -16,8 +16,7 @@ public class RegistrationTest extends BaseTest {
 
     Expected results:
     6. Verify that you are still on the registration page and an error message is displayed
-
-     */
+    */
 
     @Test
     public void attemptRegistrationWithExistingUserCredentials() {

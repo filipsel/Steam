@@ -55,7 +55,7 @@ public class CartTest extends BaseTest{
         }
     }
 
-    /** Remove from cart test
+     /** Remove from cart test
      Test steps:
      1. Sign in, search for a specific game and add it to cart
      2. Remove the game from cart by clicking on 'Remove' button
@@ -95,11 +95,13 @@ public class CartTest extends BaseTest{
     4. Navigate back to the game page
     5. Add another game upgrade/pack to the list
     6. Remove all items from the list
+    7. Confirm by clicking 'Yes' in the popup window
 
     Expected results:
     5. After you are taken to cart page again, verify if there are two game upgrades/packs on the cart page
     6. Verify if there are no more items on the cart page
-     */
+    7. Verify if there are no more items on the cart page
+    */
 
     @Test
     public void addTwoGamesToCartAndRemoveThem() {
@@ -130,7 +132,10 @@ public class CartTest extends BaseTest{
 
             print("6. Remove all items from the list");
             cartPage.clickOnRemoveAllItemsButton();
-            print("6. Verify if there are no more items on the cart page");
+
+            print("7. Confirm by clicking 'Yes' in the popup window");
+            cartPage.clickOnConfirmationButton();
+            print("7. Verify if there are no more items on the cart page");
             assert numberOfItemsOnTheList(numberOfGames) : "Error. Incorrect number of games in the cart. Expected number of games: 0. Actual number of games: " + numberOfGames;
 
             print("Test successful");

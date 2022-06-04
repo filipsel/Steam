@@ -31,6 +31,7 @@ public class FreeToPlayPage extends BasePage{
 
 
     public void clickOnTopSellersButton() {
+        print("clickOnTopSellersButton");
         waitForElementVisibility(topSellersButton);
         scrollIntoView(topSellersButton);
         topSellersButton.click();
@@ -38,10 +39,11 @@ public class FreeToPlayPage extends BasePage{
 
     public boolean specificGameIsPresent() {
         waitForElementVisibility(specificGame);
-        return presentElement(specificGame);
+        return elementPresent(specificGame);
     }
 
     public void clickOnDesiredGame () {
+        print("clickOnDesiredGame");
         specificGame.click();
     }
 

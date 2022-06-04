@@ -77,7 +77,7 @@ public class BaseTest {
             if (arrayList.size() == 2) {
                 return true;
             }
-            if (arrayList.size() == 0) {
+            else if (arrayList.size() == 0) {
                 return true;
             }
         }return false;

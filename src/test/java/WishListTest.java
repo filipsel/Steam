@@ -21,7 +21,7 @@ public class WishListTest extends BaseTest{
     4. Assert if the name of the game matches with expected name of the game
     5. Assert whether you're back on the game page
     6. Assert if the 'Add to your wishlist' button is present
-     */
+    */
 
     @Test
     public void addGameToWishlistAndRemoveItFromWishlist() {

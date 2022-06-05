@@ -1,9 +1,5 @@
 package Pages;
 
-import jdk.javadoc.doclet.Reporter;
-
-import java.net.URL;
-
 public class Strings {
 
     public static final String LOGIN_PAGE_URL = "https://store.steampowered.com/login/?redir=&redir_ssl=1&snr=1_4_4__global-header";
@@ -31,6 +27,7 @@ public class Strings {
 
     public static final String PROFILE_NAME = "steamtest240";
 
-    public static final String SELECT_SERBIA = "RS";
+    public static final String SELECT_ICELAND = "IS";
     public static final String REGISTRATION_ERROR_MESSAGE = "You must verify your humanity before you can create a Steam account.";
+
 }

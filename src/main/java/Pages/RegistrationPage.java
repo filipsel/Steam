@@ -1,11 +1,9 @@
 package Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegistrationPage extends BasePage{
 
@@ -27,27 +25,18 @@ public class RegistrationPage extends BasePage{
     @FindBy (xpath = "//select[@id = 'country']")
     WebElement countryOfResidenceDropDownMenu;
 
-    @FindBy (xpath = "//option[@value = 'RS']")
-    WebElement selectSerbiaFromCountryOfResidence;
-
-    @FindBy (xpath = "//div[@class = 'recaptcha-checkbox-border']")
-    WebElement recaptchaCheckbox;
-
-    @FindBy (xpath = "//input[@id = 'i_agree_check']")
+    @FindBy (xpath = "//input[@type = 'checkbox']")
     WebElement iAgreeCheckbox;
 
     @FindBy (xpath = "//button[@id = 'createAccountButton']//span[contains(text(),'Continue')]")
     WebElement continueButton;
-
-    @FindBy (xpath = "//iframe[@title='reCAPTCHA']")
-    WebElement recaptchaIFrame;
 
     @FindBy (xpath = "//div[@id = 'error_display']")
     WebElement errorDisplay;
 
 
     //Method for selecting Serbia from the country of residence drop-down menu
-    public void selectSerbiaFromCountryOfResidenceDropDownMenu(String value) {
+    public void selectIcelandFromCountryOfResidenceDropDownMenu(String value) {
         Select dropDownMenu = new Select(countryOfResidenceDropDownMenu);
         dropDownMenu.selectByValue(value);
     }
@@ -67,24 +56,26 @@ public class RegistrationPage extends BasePage{
     }
 
     //Method for switching to an iFrame and clicking on reCAPTCHA checkbox
-    public void clickOnRecaptchaCheckbox() {
-        waitForFrameToBeAvailable(recaptchaIFrame);
-        waitForElementToBeClickable(recaptchaCheckbox);
-        recaptchaCheckbox.click();
-        driver.switchTo().parentFrame();
-    }
+
 
     public void clickOnIAgreeCheckbox() {
+        print("clickOnIAgreeCheckbox");
+        scrollIntoView(iAgreeCheckbox);
+        waitForElementVisibility(iAgreeCheckbox);
         waitForElementToBeClickable(iAgreeCheckbox);
-        iAgreeCheckbox.click();
+        clickOnElement(iAgreeCheckbox);
     }
 
     public void submitCredentials() {
+        waitForElementToBeClickable(continueButton);
+        scrollIntoView(continueButton);
         continueButton.submit();
     }
 
     public String errorDisplayMessage() {
         waitForElementVisibility(errorDisplay);
+        scrollIntoView(errorDisplay);
         return errorDisplay.getText();
     }
+
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Filip/IdeaProjects/Steam">
+        <classes>
+            <class name="tests.CartTest">
+                <methods>
+                    <include name="addToCartTest"/>
+                    <include name="removeGameFromCart"/>
+                    <include name="addTwoGamesToCartAndRemoveThem"/>
+                </methods>
+            </class>
+            <class name="tests.EditProfileTest">
+                <methods>
+                    <include name="openProfileSettings"/>
+                </methods>
+            </class>
+            <class name="tests.RegistrationTest">
+                <methods>
+                    <include name="attemptRegistrationWithExistingUserCredentials"/>
+                </methods>
+            </class>
+            <class name="tests.SearchTest">
+                <methods>
+                    <include name="searchForASpecificGameByName"/>
+                    <include name="searchByCategory"/>
+                </methods>
+            </class>
+            <class name="tests.SignInTest">
+                <methods>
+                    <include name="successfulSignIn"/>
+                    <include name="signInWithInvalidSteamAccountNameAndValidPassword"/>
+                    <include name="signInWithValidSteamAccountNameAndInvalidPassword"/>
+                    <include name="signInWithInvalidCredentials"/>
+                </methods>
+            </class>
+            <class name="tests.WishListTest">
+                <methods>
+                    <include name="addGameToWishlistAndRemoveItFromWishlist"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

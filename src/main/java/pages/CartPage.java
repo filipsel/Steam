@@ -54,22 +54,19 @@ public class CartPage extends BasePage {
     }
 
     public boolean specificGameUpgradeIsPresent() {
-        Reporter.log("Specific game upgrade is present");
-//        print("Specific game upgrade is present");
+        print("Specific game upgrade is present");
         waitForElementVisibility(specificGameUpgrade);
         return elementPresent(specificGameUpgrade);
     }
 
     public void removeGameFromCart() {
-        Reporter.log("Removing from cart");
-//        print("Removing from cart");
+        print("Removing from cart");
         waitForElementToBeClickable(removeButton);
         removeButton.click();
     }
 
     public void clickOnRemoveAllItemsButton() {
-        Reporter.log("Removing all items from cart");
-//        print("Removing all items from cart");
+        print("Removing all items from cart");
         removeAllItemsButton.click();
     }
 
@@ -82,8 +79,7 @@ public class CartPage extends BasePage {
     }
 
     public void clickOnConfirmationButton() {
-        Reporter.log("Confirming by clicking on 'Yes' button");
-//        print("Confirming by clicking on 'Yes' button");
+        print("Confirming by clicking on 'Yes' button");
         waitForElementToBeClickable(confirmationButton);
         if (confirmationButton.isDisplayed()) {
             confirmationButton.click();

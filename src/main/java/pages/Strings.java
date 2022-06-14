@@ -5,9 +5,14 @@ public class Strings {
     public static final String LOGIN_PAGE_URL = "https://store.steampowered.com/login/?redir=&redir_ssl=1&snr=1_4_4__global-header";
     public static final String CREATE_YOUR_ACCOUNT_URL = "https://store.steampowered.com/join/?&snr=1_60_4__62";
 
-    public static final String VALID_STEAM_ACCOUNT_NAME = "SteamPunk340";
-    public static final String VALID_PASSWORD = "SteamTest340.";
-    public static final String VALID_EMAIL_ADDRESS = "steamtest240@gmail.com";
+
+    //If you possess a Steam account, please feel free to provide your valid credentials in appropriate String fields below
+
+    public static final String VALID_STEAM_ACCOUNT_NAME = "steam-account-name";
+    public static final String VALID_PASSWORD = "steam-password";
+    public static final String VALID_EMAIL_ADDRESS = "valid-email-address@email.com";
+
+
 
     public static final String INVALID_STEAM_ACCOUNT_NAME = "Random123";
     public static final String INVALID_PASSWORD = "Random123";
@@ -25,7 +30,9 @@ public class Strings {
 
     public static final String NAME_OF_GAME_ON_WISHLIST = "Counter-Strike: Global Offensive";
 
-    public static final String PROFILE_NAME = "steamtest240";
+
+    //Also feel free to provide your profile name into the field below:
+    public static final String PROFILE_NAME = "profile-name";
 
     public static final String SELECT_ICELAND = "IS";
     public static final String REGISTRATION_ERROR_MESSAGE = "You must verify your humanity before you can create a Steam account.";

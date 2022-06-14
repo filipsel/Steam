@@ -7,6 +7,7 @@ import pages.Strings;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import tests.BaseTest;
+import tests.utils.Log;
 
 public class EditProfileTest extends BaseTest {
 
@@ -61,13 +62,12 @@ public class EditProfileTest extends BaseTest {
 
             print("6. Go back to your profile page");
             profilePage.clickOnbBckToYourProfileButton();
-            print("6.Verify the correct real name appears in header");
+            print("6.Verify the correct real name 'steamtest240' appears in header");
             String realNameHeader = profilePage.realProfileName();
             assert realNameHeader.equals(Strings.PROFILE_NAME) : "Error. Real profile name ether wrong or missing. Expected real profile name: " +
                     Strings.PROFILE_NAME + ". Actual real profile name: " + realNameHeader;
-            Reporter.log("Real name header profile name is: " + realNameHeader, true);
-
-            print("Test successful");
+            Log.info("Real profile name in the header is " + realNameHeader);
+            Reporter.log("Real profile name in the header is: " + realNameHeader, true);
 
         }finally {
             driver.quit();

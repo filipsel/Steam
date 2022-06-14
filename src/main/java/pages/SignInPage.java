@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Reporter;
+import pages.utils.Log;
 
 public class SignInPage extends BasePage {
 
@@ -19,9 +20,6 @@ public class SignInPage extends BasePage {
 
     @FindBy (xpath = "//input[@id = 'remember_login']")
     WebElement rememberMeOnThisComputerCheckbox;
-
-    @FindBy (xpath = "//span[@id = 'account_pulldown']")
-    WebElement accountBox;
 
     @FindBy (xpath = "//div[@id = 'error_display']")
     WebElement errorDisplayBox;
@@ -40,32 +38,31 @@ public class SignInPage extends BasePage {
     }
 
     public SignInPage enterSteamAccountName (String text) {
-        print("Entering " + text + " in the 'Steam account name' field");
+        Log.info("Entering " + text + " in the 'Steam account name' field");
+        Reporter.log("Entering " + text + " in the 'Steam account name' field");
         steamAccountNameField.click();
         steamAccountNameField.sendKeys(text);
         return this;
     }
 
     public SignInPage enterPassword(String text) {
-        print("Entering " + text + " in the password field");
+        Log.info("Entering " + text + " in the password field");
+        Reporter.log("Entering " + text + " in the password field");
         passwordField.click();
         passwordField.sendKeys(text);
         return this;
     }
 
     public void clickOnSignInButton() {
-        print("Clicking on 'Sign in' button");
+        Log.info("Clicking on 'Sign in' button");
+        Reporter.log("Clicking on 'Sign in' button");
         signInButton.click();
     }
 
-    public boolean accountBoxIsPresent() {
-        print("Waiting for account box to be present");
-        waitForElementVisibility(accountBox);
-        return elementPresent(accountBox);
-    }
 
     public String errorMessageInTheBox() {
-        print("Getting error message in the box");
+        Log.info("Getting error message in the box");
+        Reporter.log("Getting error message in the box");
         waitForElementVisibility(errorDisplayBox);
         return errorDisplayBox.getText();
     }

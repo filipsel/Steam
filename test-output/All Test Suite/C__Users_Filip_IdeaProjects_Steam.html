@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>C:/Users/Filip/IdeaProjects/Steam</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 06 22:47:31 CEST 2022</td>
+<td>Started on:</td><td>Tue Jun 07 17:18:35 CEST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>170 seconds (170537 ms)</td>
+<tr><td>Total time:</td><td>331 seconds (331058 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,75 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.SignInTest.signInWithInvalidCredentials()'><b>signInWithInvalidCredentials</b><br>Test class: tests.SignInTest</td>
+<td><div><pre>java.lang.AssertionError: Test unsuccessful, incorrect error message is displayed. Expected error message: The account name or password that you have entered is incorrect.. Actual error message displayed: Please verify your humanity by re-entering the characters in the captcha.
+	at tests.SignInTest.signInWithInvalidCredentials(SignInTest.java:146)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2009502388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2009502388'><pre>java.lang.AssertionError: Test unsuccessful, incorrect error message is displayed. Expected error message: The account name or password that you have entered is incorrect.. Actual error message displayed: Please verify your humanity by re-entering the characters in the captcha.
+	at tests.SignInTest.signInWithInvalidCredentials(SignInTest.java:146)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>7</td>
+<td>tests.SignInTest@7fc2413d</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,100 +145,84 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.CartTest.addTwoGamesToCartAndRemoveThem()'><b>addTwoGamesToCartAndRemoveThem</b><br>Test class: tests.CartTest<br/>
-<a href="#Output-889885902" onClick='toggleBox("Output-889885902", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-889885902" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-889885902">
-Removing all items from cart<br/>
-Confirming by clicking on 'Yes' button<br/>
-</div>
-</td>
-<td></td>
-<td>19</td>
-<td>tests.CartTest@2f177a4b</td></tr>
-<tr>
-<td title='tests.SearchTest.searchForASpecificGameByName()'><b>searchForASpecificGameByName</b><br>Test class: tests.SearchTest</td>
-<td></td>
-<td>15</td>
-<td>tests.SearchTest@7a4ccb53</td></tr>
-<tr>
 <td title='tests.EditProfileTest.openProfileSettings()'><b>openProfileSettings</b><br>Test class: tests.EditProfileTest<br/>
-<a href="#Output-401862395" onClick='toggleBox("Output-401862395", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1036606347" onClick='toggleBox("Output-1036606347", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-401862395" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-401862395">
+<a href="#Output-1036606347" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1036606347">
 Actual profile name: steamtest240<br/>
 Page header contains the word: ABOUT<br/>
 Real name header profile name is: steamtest240<br/>
 </div>
 </td>
 <td></td>
-<td>16</td>
-<td>tests.EditProfileTest@229d10bd</td></tr>
+<td>46</td>
+<td>tests.EditProfileTest@6a01e23</td></tr>
 <tr>
-<td title='tests.RegistrationTest.attemptRegistrationWithExistingUserCredentials()'><b>attemptRegistrationWithExistingUserCredentials</b><br>Test class: tests.RegistrationTest</td>
+<td title='tests.SearchTest.searchByCategory()'><b>searchByCategory</b><br>Test class: tests.SearchTest</td>
 <td></td>
-<td>8</td>
-<td>tests.RegistrationTest@47542153</td></tr>
-<tr>
-<td title='tests.WishListTest.addGameToWishlistAndRemoveItFromWishlist()'><b>addGameToWishlistAndRemoveItFromWishlist</b><br>Test class: tests.WishListTest</td>
-<td></td>
-<td>25</td>
-<td>tests.WishListTest@56a6d5a6</td></tr>
-<tr>
-<td title='tests.SignInTest.successfulSignIn()'><b>successfulSignIn</b><br>Test class: tests.SignInTest</td>
-<td></td>
-<td>10</td>
-<td>tests.SignInTest@309e345f</td></tr>
+<td>29</td>
+<td>tests.SearchTest@7995092a</td></tr>
 <tr>
 <td title='tests.CartTest.removeGameFromCart()'><b>removeGameFromCart</b><br>Test class: tests.CartTest<br/>
-<a href="#Output-1605190078" onClick='toggleBox("Output-1605190078", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2062209967" onClick='toggleBox("Output-2062209967", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1605190078" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1605190078">
-Specific game upgrade is present<br/>
-Removing from cart<br/>
+<a href="#Output-2062209967" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2062209967">
 Card status message is: Your item has been removed!<br/>
 </div>
 </td>
 <td></td>
-<td>18</td>
-<td>tests.CartTest@2f177a4b</td></tr>
+<td>31</td>
+<td>tests.CartTest@10db82ae</td></tr>
+<tr>
+<td title='tests.SignInTest.successfulSignIn()'><b>successfulSignIn</b><br>Test class: tests.SignInTest</td>
+<td></td>
+<td>20</td>
+<td>tests.SignInTest@7fc2413d</td></tr>
+<tr>
+<td title='tests.CartTest.addTwoGamesToCartAndRemoveThem()'><b>addTwoGamesToCartAndRemoveThem</b><br>Test class: tests.CartTest</td>
+<td></td>
+<td>33</td>
+<td>tests.CartTest@10db82ae</td></tr>
 <tr>
 <td title='tests.SignInTest.signInWithInvalidSteamAccountNameAndValidPassword()'><b>signInWithInvalidSteamAccountNameAndValidPassword</b><br>Test class: tests.SignInTest</td>
 <td></td>
-<td>7</td>
-<td>tests.SignInTest@309e345f</td></tr>
+<td>8</td>
+<td>tests.SignInTest@7fc2413d</td></tr>
 <tr>
-<td title='tests.SignInTest.signInWithValidSteamAccountNameAndInvalidPassword()'><b>signInWithValidSteamAccountNameAndInvalidPassword</b><br>Test class: tests.SignInTest</td>
+<td title='tests.RegistrationTest.attemptRegistrationWithExistingUserCredentials()'><b>attemptRegistrationWithExistingUserCredentials</b><br>Test class: tests.RegistrationTest</td>
 <td></td>
-<td>7</td>
-<td>tests.SignInTest@309e345f</td></tr>
+<td>9</td>
+<td>tests.RegistrationTest@5a955565</td></tr>
 <tr>
-<td title='tests.SearchTest.searchByCategory()'><b>searchByCategory</b><br>Test class: tests.SearchTest</td>
+<td title='tests.SearchTest.searchForASpecificGameByName()'><b>searchForASpecificGameByName</b><br>Test class: tests.SearchTest</td>
 <td></td>
-<td>16</td>
-<td>tests.SearchTest@7a4ccb53</td></tr>
+<td>31</td>
+<td>tests.SearchTest@7995092a</td></tr>
+<tr>
+<td title='tests.WishListTest.addGameToWishlistAndRemoveItFromWishlist()'><b>addGameToWishlistAndRemoveItFromWishlist</b><br>Test class: tests.WishListTest</td>
+<td></td>
+<td>51</td>
+<td>tests.WishListTest@f8c1ddd</td></tr>
 <tr>
 <td title='tests.CartTest.addToCartTest()'><b>addToCartTest</b><br>Test class: tests.CartTest<br/>
-<a href="#Output-306612792" onClick='toggleBox("Output-306612792", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1125736023" onClick='toggleBox("Output-1125736023", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-306612792" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-306612792">
+<a href="#Output-1125736023" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1125736023">
 Current page header is: YOUR SHOPPING CART<br/>
-Specific game upgrade is present<br/>
 Specific game upgrade is present<br/>
 </div>
 </td>
 <td></td>
-<td>17</td>
-<td>tests.CartTest@2f177a4b</td></tr>
+<td>53</td>
+<td>tests.CartTest@10db82ae</td></tr>
 <tr>
-<td title='tests.SignInTest.signInWithInvalidCredentials()'><b>signInWithInvalidCredentials</b><br>Test class: tests.SignInTest</td>
+<td title='tests.SignInTest.signInWithValidSteamAccountNameAndInvalidPassword()'><b>signInWithValidSteamAccountNameAndInvalidPassword</b><br>Test class: tests.SignInTest</td>
 <td></td>
-<td>7</td>
-<td>tests.SignInTest@309e345f</td></tr>
+<td>8</td>
+<td>tests.SignInTest@7fc2413d</td></tr>
 </table><p>
 </body>
 </html>

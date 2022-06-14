@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Reporter;
 import pages.*;
 import org.testng.annotations.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -54,8 +55,7 @@ public class SearchTest extends BaseTest {
             String currentPageGameName = gamePage.getSpecificGameName();
             assert currentPageGameName.equals(Strings.GAME_NAME) : "Error. Game name is missing from the page, or is different from expected. Expected game name: "
                     + Strings.GAME_NAME + ". Actual game name: " + currentPageGameName;
-
-            print("Test successful");
+            Reporter.log("Name of the game on current page is:" + currentPageGameName);
 
         } finally {
             driver.quit();
@@ -95,6 +95,7 @@ public class SearchTest extends BaseTest {
             String pageHeader = freeToPlayPage.pageHeaderText();
             assert pageHeader.equals(Strings.FREE_TO_PLAY_PAGE_HEADER) : "Error. Page header text is ether wrong or missing, or page did not open at all. Expected: "
                     + Strings.FREE_TO_PLAY_PAGE_HEADER + ". Actual: " + pageHeader;
+            Reporter.log("Page header text: " + pageHeader);
 
             print("4. Scroll down and click on 'Top Sellers' button");
             freeToPlayPage.clickOnTopSellersButton();
@@ -108,8 +109,7 @@ public class SearchTest extends BaseTest {
             String currentPageGameName = gamePage.getSpecificGameName();
             assert currentPageGameName.equals(Strings.GAME_NAME) : "Error. Game name is missing from the page, or is different from expected. Expected game name: "
                     + Strings.GAME_NAME + ". Actual game name: " + currentPageGameName;
-
-            print("Test successful");
+            Reporter.log("Name of the game on current page is " + currentPageGameName);
 
         }finally {
             driver.quit();

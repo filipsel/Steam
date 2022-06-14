@@ -5,45 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e20882-e513-4da3-b33a-2070754ab6bc" name="Changes" comment="My project for &quot;Testing &amp; QA&quot; course">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_17_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_23_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/Screenshot-1655223972845.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/Screenshot-1655224083682.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/Screenshot-1655225969092.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/utils/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/utils/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml-files/cartTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml-files/editProfileTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml-files/registrationTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml-files/searchTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml-files/signInTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml-files/wishListTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_0_alpha7.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Steam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Steam.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/FreeToPlayPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FreeToPlayPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/GamePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SignInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Strings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EditProfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/EditProfileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SignInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SignInTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WishListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/WishListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FreeToPlayPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FreeToPlayPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/GamePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Strings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/EditProfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/EditProfileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SignInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SignInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/WishListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/WishListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/BasePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/CartPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/FreeToPlayPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/FreeToPlayPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/GamePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/GamePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/ProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/ProfilePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/RegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RegistrationPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/SearchPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/SignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/SignInPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/Strings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/Strings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CartTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/EditProfileTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RegistrationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SearchTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SignInTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WishListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/EditProfileTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/EditProfileTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/SignInTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/SignInTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/C__Users_Filip_IdeaProjects_Steam.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/C__Users_Filip_IdeaProjects_Steam.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/C__Users_Filip_IdeaProjects_Steam.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/C__Users_Filip_IdeaProjects_Steam.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.CartTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.CartTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.EditProfileTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.EditProfileTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.RegistrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.RegistrationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.SearchTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.SearchTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.SignInTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.SignInTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.WishListTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.WishListTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/All Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/All Test Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/All Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/All Test Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/All Test Suite/reporter-output.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/All Test Suite/reporter-output.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/All Test Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/All Test Suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,39 +95,61 @@
     </option>
   </component>
   <component name="ProjectId" id="29wRK6CEndqYqXpQRNAAHBhqXbt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Filip/IdeaProjects/Tickets.rs-main&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Filip/IdeaProjects/Tickets.rs-main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.C:/Users/Filip/IdeaProjects/Steam/testng.xml">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Filip\IdeaProjects\Steam" />
+      <recent name="C:\Users\Filip\IdeaProjects\Steam\testng.xml-files" />
+      <recent name="C:\Users\Filip\IdeaProjects\Steam\xml-files" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.CartTest.addToCartTest">
+    <configuration name="C:/Users/Filip/AppData/Local/JetBrains/IdeaIC2022.1/temp-testng-customsuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Steam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$USER_HOME$/AppData/Local/JetBrains/IdeaIC2022.1/temp-testng-customsuite.xml" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.EditProfileTest" />
+      <option name="METHOD_NAME" value="openProfileSettings" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/Filip/IdeaProjects/Steam/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Steam" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -112,44 +158,16 @@
     </configuration>
     <configuration name="CartTest.addToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Steam" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.CartTest" />
       <option name="METHOD_NAME" value="addToCartTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartTest.addTwoGamesToCartAndRemoveThem" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Steam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CartTest" />
-      <option name="METHOD_NAME" value="addTwoGamesToCartAndRemoveThem" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -175,7 +193,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignInTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WishListTest.addGameToWishlistAndRemoveItFromWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Steam" />
       <extension name="coverage">
         <pattern>
@@ -184,8 +202,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SignInTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="tests.WishListTest" />
+      <option name="METHOD_NAME" value="addGameToWishlistAndRemoveItFromWishlist" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -193,19 +212,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.CartTest.addTwoGamesToCartAndRemoveThem" />
-      <item itemvalue="TestNG.EditProfileTest.openProfileSettings" />
-      <item itemvalue="TestNG.CartTest.addToCartTest" />
+      <item itemvalue="TestNG.C:/Users/Filip/AppData/Local/JetBrains/IdeaIC2022.1/temp-testng-customsuite.xml" />
       <item itemvalue="TestNG.C:/Users/Filip/IdeaProjects/Steam/testng.xml" />
-      <item itemvalue="TestNG.SignInTest" />
+      <item itemvalue="TestNG.CartTest.addToCartTest" />
+      <item itemvalue="TestNG.WishListTest.addGameToWishlistAndRemoveItFromWishlist" />
+      <item itemvalue="TestNG.EditProfileTest.openProfileSettings" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Filip/IdeaProjects/Steam/testng.xml" />
-        <item itemvalue="TestNG.EditProfileTest.openProfileSettings" />
-        <item itemvalue="TestNG.CartTest.addTwoGamesToCartAndRemoveThem" />
         <item itemvalue="TestNG.CartTest.addToCartTest" />
-        <item itemvalue="TestNG.SignInTest" />
+        <item itemvalue="TestNG.C:/Users/Filip/IdeaProjects/Steam/testng.xml" />
+        <item itemvalue="TestNG.WishListTest.addGameToWishlistAndRemoveItFromWishlist" />
+        <item itemvalue="TestNG.C:/Users/Filip/AppData/Local/JetBrains/IdeaIC2022.1/temp-testng-customsuite.xml" />
+        <item itemvalue="TestNG.EditProfileTest.openProfileSettings" />
       </list>
     </recent_temporary>
   </component>
@@ -247,8 +266,19 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Modifications" />
     <MESSAGE value="My project for &quot;Testing &amp; QA&quot; course" />
     <option name="LAST_COMMIT_MESSAGE" value="My project for &quot;Testing &amp; QA&quot; course" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,33 +1,34 @@
 package tests;
 
-import pages.*;
 import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
+import pages.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.Reporter;
-import org.testng.annotations.AfterMethod;
+import tests.utils.Log;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class BaseTest {
     ChromeDriver driver;
 
     public ChromeDriver openChromeDriver() {
+        Log.info("Starting up ChromeDriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments(new String[]{"--start-maximized"});
         options.addArguments(new String[]{"--ignore-certificate-errors"});
         options.addArguments(new String[]{"--disable-popup-blocking"});
         options.addArguments(new String[]{"--incognito"});
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-        options.setExperimentalOption("useAutomationExtension", false);
         ChromeDriver driver = new ChromeDriver(options);
         return driver;
     }
@@ -37,17 +38,18 @@ public class BaseTest {
     }
 
     public void successfulSignIn(ChromeDriver driver) {
-        print("Performing a successful sign in");
+        Log.info("Performing a successful sign in");
         SignInPage signInPage = new SignInPage(driver);
         signInPage.enterSteamAccountName(Strings.VALID_STEAM_ACCOUNT_NAME);
         signInPage.enterPassword(Strings.VALID_PASSWORD);
         signInPage.clickOnSignInButton();
-        assert signInPage.accountBoxIsPresent() : "Error. Sign in unsuccessful";
-        print("Sign in successful");
+        HomePage homePage = new HomePage(driver);
+        assert homePage.accountBoxIsPresent() : "Error. Sign in unsuccessful";
+        Log.info("Sign in successful");
     }
 
     public void searchForASpecificGameByName(ChromeDriver driver) {
-        print("Searching for a specific game by name");
+        Log.info("Searching for a specific game by name");
         HomePage homePage = new HomePage(driver);
         homePage.enterTextIntoSearchBox(Strings.GAME_NAME);
         homePage.clickOnSearchButton();
@@ -62,11 +64,11 @@ public class BaseTest {
         String currentPageGameName = gamePage.getSpecificGameName();
         assert currentPageGameName.equals(Strings.GAME_NAME) : "Error. Game name is missing from the page, or is different from expected. Expected game name: "
                 + Strings.GAME_NAME + ". Actual game name: " + currentPageGameName;
-        print("Search successful");
+        Log.info("Search successful");
     }
 
     public void addToCart(ChromeDriver driver) {
-        print("Successfully adding a specific game to cart");
+        Log.info("Successfully adding a specific game to cart");
         successfulSignIn(driver);
         searchForASpecificGameByName(driver);
         GamePage gamePage = new GamePage(driver);
@@ -75,7 +77,7 @@ public class BaseTest {
         Assert.assertEquals(cartPageURL, Strings.CART_PAGE_URL);
         CartPage cartPage = new CartPage(driver);
         assert cartPage.specificGameUpgradeIsPresent() : "Error. Specific game upgrade is not present on the list";
-        print("Successfully added to cart");
+        Log.info("Successfully added to cart");
     }
 
     public void signInByClickingOnLoginButton(ChromeDriver driver) {
@@ -97,4 +99,37 @@ public class BaseTest {
         return false;
     }
 
+    @AfterMethod
+
+    public void onTestFailure(@NotNull ITestResult arg0) {
+        if (arg0.getStatus() == ITestResult.FAILURE) {
+            Log.info("Failure detected...");
+            String fileName = String.format("Screenshot-%s.jpg", Calendar.getInstance().getTimeInMillis());
+            ChromeDriver driver = openChromeDriver();
+            arg0.getTestContext().getAttribute("webDriver");
+            TakesScreenshot ts = (TakesScreenshot) (driver);
+            File srcFile = ts.getScreenshotAs(OutputType.FILE);
+            File destFile = new File("./screenshots/" + fileName);
+            try {
+                FileUtils.copyFile(srcFile, destFile);
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                driver.quit();
+            }
+            Log.info("Screenshot taken");
+        }
+    }
+
+    @AfterMethod
+
+    public ITestResult printResult(@NotNull ITestResult result) {
+        if (result.getStatus() == ITestResult.SUCCESS) {
+            print("Test successful");
+            return result;
+        } else {
+            print("Test unsuccessful");
+        }
+        return result;
+    }
 }

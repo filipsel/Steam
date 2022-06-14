@@ -1,11 +1,13 @@
 package tests;
 
+import org.testng.Reporter;
 import pages.GamePage;
 import pages.Strings;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.BaseTest;
+import tests.utils.Log;
 
 public class WishListTest extends BaseTest {
 
@@ -52,6 +54,7 @@ public class WishListTest extends BaseTest {
             String nameOfGameOnWishlist = gamePage.getGameOnWishlistName();
             assert nameOfGameOnWishlist.equals(Strings.NAME_OF_GAME_ON_WISHLIST) : "Error. Specific game is different from expected or the game is missing from the list. Expected game name: " +
                     Strings.NAME_OF_GAME_ON_WISHLIST + ". Actual game name: " + nameOfGameOnWishlist;
+            Reporter.log("Name of the game on wishlist: " + nameOfGameOnWishlist);
 
             print("5. Go back to game page");
             driver.navigate().back();
@@ -63,8 +66,6 @@ public class WishListTest extends BaseTest {
             gamePage.clickOnOnWishlistButton();
             print("6. Assert if the 'Add to your wishlist' button is present");
             assert gamePage.addToWishListButtonIsPresent() : "Error. 'On wishlist' button is not present";
-
-            print("Test successful");
 
         }finally{
             driver.quit();

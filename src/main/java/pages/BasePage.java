@@ -1,8 +1,8 @@
 package pages;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -28,7 +28,7 @@ public class BasePage {
     }
 
     //Verifies whether the element is present or not
-    public boolean elementPresent(WebElement element) {
+    public boolean verifyElementPresent(WebElement element) {
         try {
             boolean present = element.isDisplayed();
             return present;
@@ -36,6 +36,7 @@ public class BasePage {
             return false;
         }
     }
+
 
     //Scroll into view enables the element to be in the center in order for us to further apply methods
     public void scrollIntoView(WebElement element) {

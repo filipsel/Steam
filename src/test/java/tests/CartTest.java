@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.BaseTest;
+import tests.utils.Log;
 
 import java.util.ArrayList;
 
@@ -56,8 +57,6 @@ public class CartTest extends BaseTest {
             assert cartPage.specificGameUpgradeIsPresent() : "Error. Specific game upgrade is not present on the list";
             Reporter.log("Specific game upgrade is present", true);
 
-            print("Test successful");
-
         }finally {
             driver.quit();
         }
@@ -88,8 +87,6 @@ public class CartTest extends BaseTest {
             assert cardStatusMessage.equals(Strings.CART_STATUS_MESSAGE) : "Error. Expected cart status message is missing from the page, or is different from expected. Expected message: "
                     + Strings.CART_STATUS_MESSAGE + ". Actual message: " + cardStatusMessage;
             Reporter.log("Card status message is: " + cardStatusMessage, true);
-
-            print("Test successful");
 
         } finally {
             driver.quit();
@@ -147,8 +144,8 @@ public class CartTest extends BaseTest {
             cartPage.clickOnConfirmationButton();
             print("7. Verify if there are no more items on the cart page");
             assert numberOfItemsOnTheList(numberOfGames) : "Error. Incorrect number of games in the cart. Expected number of games: 0. Actual number of games: " + numberOfGames;
-
-            print("Test successful");
+            Log.info("Number of items on the cart page is: " + numberOfGames);
+            Reporter.log("Number of items on the cart page is: " + numberOfGames);
 
         }finally {
             driver.quit();

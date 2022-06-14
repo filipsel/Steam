@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Reporter;
 import pages.RegistrationPage;
 import pages.Strings;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -44,8 +45,7 @@ public class RegistrationTest extends BaseTest {
             String errorMessage = registrationPage.errorDisplayMessage();
             assert errorMessage.equals(Strings.REGISTRATION_ERROR_MESSAGE) : "Error. Registration error message not present. Expected error message: " +
                     Strings.REGISTRATION_ERROR_MESSAGE + ". Actual error message: " + errorMessage;
-
-            print("Test successful");
+            Reporter.log("Error message is displayed: " + errorMessage);
 
         } finally {
             driver.quit();

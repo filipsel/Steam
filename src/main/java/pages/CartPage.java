@@ -4,7 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Reporter;
+import pages.utils.Log;
 
+import java.lang.annotation.RetentionPolicy;
 import java.util.*;
 
 public class CartPage extends BasePage {
@@ -46,30 +48,43 @@ public class CartPage extends BasePage {
     //Methods
 
     public String pageHeaderText() {
+        Log.info("Getting page header text");
+        Reporter.log("Getting page header text");
         return pageHeader.getText();
     }
 
     public String cartStatusMessageRemovedItem() {
+        Log.info("Getting cart status message");
+        Reporter.log("Getting cart status message");
         return cartStatusMessage.getText();
     }
 
     public boolean specificGameUpgradeIsPresent() {
-        print("Specific game upgrade is present");
+        Log.info("Checking whether specific game upgrade is present");
+        Reporter.log("Checking whether specific game upgrade is present");
         waitForElementVisibility(specificGameUpgrade);
-        return elementPresent(specificGameUpgrade);
+        if (specificGameUpgrade.isDisplayed()){
+            Log.info("Specific game upgrade is present");
+            Reporter.log("Specific game upgrade is present");
+        }else {
+            Log.error("Specific game upgrade is missing");
+            Reporter.log("Specific game upgrade is missing");
+        }
+        return verifyElementPresent(specificGameUpgrade);
     }
 
     public void removeGameFromCart() {
-        print("Removing from cart");
+        Log.info("Removing the game from cart");
+        Reporter.log("Removing the game from cart");
         waitForElementToBeClickable(removeButton);
         removeButton.click();
     }
 
     public void clickOnRemoveAllItemsButton() {
-        print("Removing all items from cart");
+        Log.info("Removing all items from cart");
+        Reporter.log("Removing all items from cart");
         removeAllItemsButton.click();
     }
-
 
     public ArrayList<WebElement> getNumberOfGamesInTheCart() {
         ArrayList<WebElement> numberOfGames = new ArrayList<>();
@@ -79,11 +94,11 @@ public class CartPage extends BasePage {
     }
 
     public void clickOnConfirmationButton() {
-        print("Confirming by clicking on 'Yes' button");
+        Log.info("Confirming by clicking on 'Yes' button");
+        Reporter.log("Confirming by clicking on 'Yes' button");
         waitForElementToBeClickable(confirmationButton);
         if (confirmationButton.isDisplayed()) {
             confirmationButton.click();
         }
     }
-
 }

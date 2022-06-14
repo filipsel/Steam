@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Reporter;
+import pages.utils.Log;
 
 public class ProfilePage extends BasePage{
 
@@ -38,47 +40,54 @@ public class ProfilePage extends BasePage{
     //Methods
 
     public String profileNameText() {
-        print("Getting profile name");
+        Log.info("Getting profile name");
+        Reporter.log("Getting profile name");
         String name= profileName.getText();
         return name;
     }
 
     public void clickOnEditProfileButton() {
-        print("Clicking on 'Edit Profile' button");
+        Log.info("Clicking on 'Edit Profile' button");
+        Reporter.log("Clicking on 'Edit Profile' button");
         waitForElementVisibility(editProfileButton);
         editProfileButton.click();
     }
 
     public String dialogueHeaderText() {
-        print("Getting dialogue header text");
+        Log.info("Getting dialogue header text");
+        Reporter.log("Getting dialogue header text");
         waitForElementVisibility(dialogueHeader);
         String headerText = dialogueHeader.getText();
         return headerText;
     }
 
     public void enterNameIntoRealNameInputBox() {
-        print("Entering name into 'Real Name' input box");
+        Log.info("Entering name into 'Real Name' input box");
+        Reporter.log("Entering name into 'Real Name' input box");
         waitForElementVisibility(realNameInputBox);
         realNameInputBox.clear();
         realNameInputBox.sendKeys(Strings.PROFILE_NAME);
     }
 
     public void clickOnSaveButton() {
-        print("Clicking on 'Save' button");
+        Log.info("Clicking on 'Save' button");
+        Reporter.log("Clicking on 'Save' button");
         waitForElementToBeClickable(saveButton);
         scrollIntoView(saveButton);
         saveButton.click();
     }
 
     public void clickOnbBckToYourProfileButton() {
-        print("Clicking on 'Back to Your Profile' button");
+        Log.info("Clicking on 'Back to Your Profile' button");
+        Reporter.log("Clicking on 'Back to Your Profile' button");
         waitForElementToBeClickable(backToYourProfileButton);
         scrollIntoView(backToYourProfileButton);
         backToYourProfileButton.click();
     }
 
     public String realProfileName() {
-        print("Getting real profile name");
+        Log.info("Getting real profile name");
+        Reporter.log("Getting real profile name");
         waitForElementVisibility(realNameHeader);
         return realNameHeader.getText();
     }
